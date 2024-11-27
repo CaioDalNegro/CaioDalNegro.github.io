@@ -1,0 +1,367 @@
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #121212;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+/* Estilização do header */
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Flexbox para navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens ao longo da barra */
+  align-items: center; /* Alinha todos os itens (logo, links e botões) verticalmente no centro */
+  width: 100%;
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Links de navegação */
+.nav-links {
+  list-style: none;
+  display: flex; /* Torna os itens horizontais */
+  gap: 1.5rem; /* Espaçamento entre os itens */
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+/* Estilo dos links */
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #a066ff; /* Cor de destaque ao passar o mouse */
+}
+
+.inicial{
+  margin-right: 50%;
+  text-align: left;
+}
+
+/* Botões na navbar */
+.buttons {
+  display: flex;
+  align-items: center; /* Alinha os botões verticalmente no centro */
+  gap: 1rem; /* Espaçamento entre os botões */
+}
+
+/* Estilo do botão de contato */
+.contact-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #a066ff;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  justify-content: space-between; /* Distribui os itens ao longo da barra */
+}
+
+.contact-button:hover {
+  background-color: #a066ff;
+}
+
+/* Estilo do botão de alternância de tema */
+.theme-toggle {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+
+.hero {
+  position: relative;
+  height: calc(100vh - 60px); /* Subtrai o tamanho do header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: 
+    url('/assets/img/Vetor.png') center/contain no-repeat;
+  padding: 0 2rem;
+}
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #a066ff;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 0.7rem 2rem;
+    border: 2px solid #a066ff;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #a066ff;
+  }
+
+
+/* Seção 'About Me' */
+.about-me {
+  background-color: #121212; /* Fundo escuro */
+  color: #fff; /* Texto branco */
+  padding: 4rem 2rem; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Container de informações */
+.about-me .info {
+  max-width: 800px; /* Largura máxima da seção */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  line-height: 1.6; /* Altura da linha para legibilidade */
+}
+
+/* Títulos */
+.about-me h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-me h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #a066ff, #ffffff); /* Gradiente de roxo para branco */
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  -webkit-text-fill-color: transparent; /* Define o texto como transparente para mostrar o gradiente */
+}
+
+
+/* Parágrafos */
+.about-me p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8); /* Cor levemente suavizada */
+}
+
+/*section Experiences------------------------------------------------------*/
+.experiences {
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  width: 60%;
+  margin: 0 auto; /* Centraliza o elemento horizontalmente */
+}
+
+
+.section-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #a066ff, #ffffff); /* Gradiente de roxo para branco */
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  -webkit-text-fill-color: transparent; /* Define o texto como transparente para mostrar o gradiente */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #a066ff;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*section portifolio------------------------------------------------------*/
+.portfolio {
+  text-align: center;
+  padding: 2rem;
+  width: 60%;
+  margin: 0 auto; /* Centraliza o elemento horizontalmente */
+}
+
+.portfolio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #a066ff, #ffffff); /* Gradiente de roxo para branco */
+  -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+  -webkit-text-fill-color: transparent; /* Define o texto como transparente para mostrar o gradiente */
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.category-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-button.active, .category-button:hover {
+  background-color: #8c53ff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  overflow: hidden;
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card h3 {
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  margin: 0 1rem 1rem;
+  color: #a3a3a3;
+}
+
+/*Ródape------------------------------------------------------*/
+.footer {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 1rem; /* Espaçamento entre os elementos */
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin: 0; /* Remove a margem para melhor alinhamento */
+}
+
+.email-box {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.email-box .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #a3a3a3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-link img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.icon-link:hover img {
+  transform: scale(1.1);
+}
+
+
+
+  
