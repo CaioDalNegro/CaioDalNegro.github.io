@@ -18,16 +18,15 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#knowledge">Knowledge</a></li>
+        <li><a href="#conhecimentos">Knowledge</a></li>
       </ul>
       <div class="buttons">
         <a href="#contact" class="contact-button">Contact Me</a>
-        <button class="theme-toggle">☀</button>
       </div>
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="Home">
       <div class="inicial">
         <h1>Hello,<br>I am, <span class="highlight">Caio</span> Student</h1>
         <p>Systems Analysis and Development <span class="highlight">student</span></p>
@@ -35,7 +34,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
       <div class="info">
         <h1>About Me</h1>
         <h4>Get to Know Me</h4>
@@ -48,50 +47,37 @@
       </div>
     </section>
 
-    <section class="experiences">
+    <section class="experiences" id="conhecimentos">
       <div class="section-header">
         <h1>Experiences</h1>
         <h4>my knowledge</h4>
       </div>
-      <div class="cards-container">
-        <div class="card">
-          <h3>Data Analytics & Visualization</h3>
-          <p>
-            From data inception to actionable insights, I design compelling analytics and visualization solutions.
-          </p>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fab fa-python"></i>
         </div>
-        <div class="card">
-          <h3>Predictive Analytics and Forecasting</h3>
-          <p>
-            From data to foresight, I craft predictive analytics and forecasting solutions that empower strategic
-            decisions.
-          </p>
+        <div class="skill">
+          <i class="fab fa-java"></i>
         </div>
-        <div class="card">
-          <h3>Natural Language Processing</h3>
-          <p>
-            From text to insight, I craft NLP solutions that empower businesses in the digital age.
-          </p>
+        <div class="skill">
+          <i class="fab fa-html5"></i>
         </div>
-        <div class="card">
-          <h3>AI Chatbots</h3>
-          <p>
-            From design to deployment, I build AI Chatbots that enhance customer interactions and streamline processes.
-          </p>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js-square"></i>
+        </div>
+        <div class="skill">
+          <i class="fab fa-react"></i>
         </div>
       </div>
     </section>
+    
 
-    <section class="portfolio">
+    <section class="portfolio" id="projects">
       <h1>Projects</h1>
       <h4 class="subtitle">Some of my Work</h4>
-      <div class="categories">
-        <button class="category-button active">JAVA</button>
-        <button class="category-button">FRONT-END</button>
-        <button class="category-button">Power BI</button>
-        <button class="category-button">AI/ML</button>
-        <button class="category-button">Spatial Data Science</button>
-      </div>
       <div class="project-grid">
         <div class="project-card">
           <img src="/assets/img/teste.jpg" alt="Project 1">
@@ -107,11 +93,10 @@
         </div>
         <div class="project-card">
           <img src="/assets/img/teste.jpg" alt="Project 3">
-          <h3>Project name/description</h3>
-          <p>Technology used</p>
-          <p>Web Design / Usability Testing</p>
-        </div>
-      </div>
+          <h3>Exemplos usando JDBC</h3>
+          <p>Java, JDBC, MySQL</p>
+          <p>Uma aplicação do funcioamento de Java e JDBC, a aplicação se conecta a um banco de dados MySQL, onde todas as informações sobre os clientes, reservas e pagamentos são armazenadas de forma segura. A interface foi construída com Swing, proporcionando uma experiência visual intuitiva para os usuários.</p>
+      </div>      
     </section>
 
     <footer class="footer">
@@ -123,7 +108,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2023 all rights reserved.</p>
+        <p>&copy; Feito Caio.dns❤</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com" target="_blank" class="icon-link">
             <i class="fab fa-linkedin"></i>

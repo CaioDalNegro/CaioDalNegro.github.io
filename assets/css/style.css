@@ -198,37 +198,50 @@ header {
   -webkit-text-fill-color: transparent; /* Define o texto como transparente para mostrar o gradiente */
 }
 
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  justify-content: center;
+/* Estilos gerais para o container de habilidades */
+.skills-container {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente */
+  gap: 20px; /* Espaçamento entre os ícones */
+  flex-wrap: wrap; /* Garante que os ícones se ajustem em telas pequenas */
+  margin-top: 20px;
 }
 
-.card {
-  background-color: #1f1f1f;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
+/* Estilo para cada ícone de habilidade */
+.skill {
+  text-align: center;
+  width: 125px; /* Tamanho fixo para os ícones */
+  height: 125px; /* Tamanho fixo para os ícones */
+  display: flex;
+  justify-content: center; /* Centraliza o ícone */
+  align-items: center; /* Centraliza o ícone */
+  border-radius: 50%; /* Torna os ícones circulares */
+  border: 1px solid #8a05b6;
+  background-color: #8d8d8d; /* Cor de fundo dos círculos */
+  box-shadow: 0 4px 8px rgba(195, 0, 255, 0.5); /* Sombra suave roxa */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Efeito de transição */
 }
 
-.card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  color: #a066ff;
+.skill i {
+  font-size: 36px; /* Ajuste o tamanho dos ícones */
+  color: #8a05b6; /* Cor roxa dos ícones */
+  display: flex;
 }
 
-.card p {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  color: rgba(255, 255, 255, 0.7);
+/* Efeito de hover (aumenta o tamanho e altera a cor de fundo) */
+.skill:hover {
+  transform: scale(1.2); /* Aumenta o tamanho no hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra no hover (preto) */
+  background-color: #817979; /* Cor de fundo cinza mais escuro no hover */
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+.skill p {
+  margin-top: 10px; /* Margem para o texto abaixo do ícone */
+  font-size: 14px;
+  color: #ccc; /* Cor de texto cinza claro */
 }
+
+
 
 /*section portifolio------------------------------------------------------*/
 .portfolio {
